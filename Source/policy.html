@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <style>
+        .smaller-width{
+            width: 50%;
+        }
+    </style>
     <script src="../script.js" defer></script>
     <link rel="apple-touch-icon" sizes="57x57" href="../ico/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../ico/apple-icon-60x60.png">
@@ -33,7 +38,7 @@
         <ul class="desktop-menu-when-open navbar">
           <li><a href="../index.html"><img src="../Image/home.png" width="16px"> &nbsp; TRANG CHỦ</a></li>
           <li><a href="#"><span class="text10">THUÊ XE</span></a></li>
-          <li><a href="./rent.html"><img src="../Image/motorcycle.png" width="20px"> &nbsp; THUÊ XE MÁY</a></li>
+          <li><a href="./rent.html"><img src="../Image/motorcycle.png" width="16px"> &nbsp; THUÊ XE MÁY</a></li>
           <li><a href="#"><span class="text10">THUÊ XE</span></a></li>
           <li><a href="./about.html"><img src="../Image/info.png" width="16px"> &nbsp; GIỚI THIỆU</a></li>
           <li><a href="#"><span class="text10">THUÊ XE</span></a></li>
@@ -51,7 +56,7 @@
           <b class="icon-phone"> <img src="../Image/call.png" width="14px"> </b> <div >Hotline: 0123456789</div>
         </div>
         <div class="contact-info">
-          <img src="../Image/—Pngtree—mail icon_4479730.png" width="30px"> <p>abcdef@xyz.com &nbsp; <span class="make_it_fade">|</span> &nbsp; <img src="../Image/clock.png" width="20px"> &nbsp;24/24 &nbsp; <span class="make_it_fade">|</span> &nbsp; <b class="icon-phone"> <img src="../Image/call.png" width="14px"> </b> 0123456789</p>
+          <img src="../Image/—Pngtree—mail icon_4479730.png" width="27px"> <p>abcdef@xyz.com &nbsp; <span class="make_it_fade">|</span> &nbsp; <img src="../Image/clock.png" width="16px"> &nbsp;24/24 &nbsp; <span class="make_it_fade">|</span> &nbsp; <b class="icon-phone"> <img src="../Image/call.png" width="14px"> </b> 0123456789</p>
         </div>
       </div>
     </div>
@@ -64,7 +69,7 @@
         <nav class="menu">
           <ul class="desktop-menu" id="menu">
             <li><a href="../index.html"><img src="../Image/home.png" width="16px"> &nbsp;TRANG CHỦ</a></li>
-            <li><a href="./rent.html"><img src="../Image/motorcycle.png" width="20px"> &nbsp;THUÊ XE MÁY</a></li>
+            <li><a href="./rent.html"><img src="../Image/motorcycle.png" width="16px"> &nbsp;THUÊ XE MÁY</a></li>
             <li><a href="./about.html"><img src="../Image/info.png" width="16px"> &nbsp;GIỚI THIỆU</a></li>
             <li><a href="./policy.html"><img src="../Image/balance.png" width="16px"> &nbsp;CHÍNH SÁCH</a></li>
             <li><a href="./contact.html"><img src="../Image/telephone.png" width="16px"> &nbsp;LIÊN HỆ</a></li>
@@ -80,7 +85,132 @@
       <a href="tel:0123456789" class="box hotline-box">Hotline: 0123456789</a>
     </div>
 
-    <h1>ĐÂY LÀ SITE CHÍNH SÁCH</h1>
+    <div id="my-about-policy-contact">
+        <p class="text0">Tatcalataivdank</p>
+        <span class="text01"><p class="text0">Chao mung ban den voi Tatcalataivdank</p></span>
+        <p class="text0">Chao mung ban den voi Tatcalataivdank</p>
+      <h1 class="make_it_bigger">CHÍNH SÁCH</h1>
+    </div>
+
+    <div class="policy">
+        <p class="text0">Lorem ipsum dolor sit amet.</p>
+        <p class="text0">Lorem ipsum dolor sit amet.</p>
+        <p class="text0">Lorem ipsum dolor sit amet.</p>
+        <p class="text0">Lorem ipsum dolor sit amet.</p>
+        <p class="text0">Lorem ipsum dolor sit amet.</p>
+        <p class="text0">Lorem ipsum dolor sit amet.</p>
+        <p class="text01">Lorem ipsum dolor sit amet.</p>
+        <div class="container-1">
+            <table class="table-top-align">
+                <tr>
+                    <td class="smaller-width">
+                        <div class="button-container">
+                            <button class="button active" onclick="changeContent1('content1')"><b>Thời gian thuê xe</b></button>
+                            <button class="button active" onclick="changeContent1('content2')"><b>Thủ tục thuê xe</b></button>
+                            <button class="button active" onclick="changeContent1('content3')"><b>Trách nhiệm bên thuê</b></button>
+                            <button class="button active" onclick="changeContent1('content4')"><b>Trách nhiệm bên cho thuê</b></button>
+                        </div>
+                    </td>
+                    <td class="bigger-width">
+                        <div class="content" id="content-1"></div>
+                    </td>
+                </tr>
+            </table>
+            <div class="button-content button-content-1">
+                <h1>Thời gian thuê xe</h1>
+                <ul class="text-bigger">
+                    <li><strong>Ngày cuối tuần:</strong> Thứ 7 và Chủ nhật
+                    <ul>
+                        <li>Thời gian lấy xe: 12 giờ hôm nay.</li>
+                        <li>Thời gian trả xe: 12 giờ ngày hôm sau.</li>
+                        <li>Có thể linh động lấy sớm: Thì hôm sau trả xe = giờ lấy xe. Nếu quá giờ tính 20k/giờ</li>
+                    </ul>
+                    </li>
+                    <br>
+                    <li><strong>Ngày thường:</strong> Từ Thứ 2 - Thứ 6
+                    <ul>
+                        <li>Thời gian lấy xe: 17h hôm nay.</li>
+                        <li>Thời gian trả xe: 17h ngày mai.</li>
+                        <li>Có thể linh động lấy sớm: Thì hôm sau trả xe = giờ lấy xe. Nếu quá giờ tính 20k/giờ</li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="button-content button-content-2">
+                <h1>Thủ tục thuê xe</h1>
+                <p class="text-bigger"> Các bước làm thủ tục thuê xe như sau:</p>
+                <ol class="text-bigger">
+                    <li>Khách thuê xe phải là người trong độ tuổi được phép lái xe và có Giấy phép lái xe được cấp bởi cơ quan nhà nước có thẩm quyền.</li>
+                    <li>Phải để lại một trong các giấy tờ sau:
+                        <ul>
+                            <li>Đối với khách du lịch <strong>đi bằng máy bay</strong> vui lòng để lại CMND, thẻ Căn cước Công dân hoặc Hộ chiếu kèm với thông tin chuyến bay đến và rời.</li>
+                            <li>Với khách <strong>là người địa phương</strong> hoặc từ nơi khác đến <strong>không có vé máy bay</strong>, thủ tục yêu cầu là để lại CMND, thẻ Căn cước Công dân hoặc Hộ chiếu </li>
+                        </ul>
+                    </li>
+                    <li>Đồng ý các điều khoản và ký vào hợp đồng thuê xe giữa 2 bên.</li>
+                    <li>Nhận xe.</li>
+                </ol>
+                <p class="text-bigger"><strong>Lưu ý:</strong> Thuê xe theo đoàn thì chỉ cần 1 người đứng ra làm thủ tục thuê xe.</p>
+            </div>
+
+            <div class="button-content button-content-3">
+                <h1>Trách nhiệm bên thuê</h1>
+                <ol class="text-bigger">
+                    <li>Kiểm tra kỹ xe trước khi nhận </li>
+                    <li>Không được bóc hay làm rách tem bảo hành và đảm bảo sửa chữa, thay thế bất cứ chi tiết nào.</li>
+                    <li>Trong thời gian sử dụng xe thuê, bên B phải có trách nghiệm bảo vệ, giữ dìn và điều khiển xe tuân thủ đúng với luật oan toàn giao thông Việt Nam. Trường hợp xẩy ra vấn đề phát sinh sẽ được giải quyết như dưới đây:
+                        <ul class="text-bigger">
+                            <li>Bên B phải báo lại cho bên A khi có các vấn đề hỏng hóc xẩy ra để hai bên thống nhất phương án thực hiện.</li>
+                            <li>Mọi sự cố bẹp, nứt, vỡ, móp méo các chi tiết của xe do người thuê gây ra thì người thuê phải mua đồ của hãng thay thế (không chấp nhận gò, hàn).</li>
+                            <li>Đối với việc thủng săm, thủng lốp khi lưu thông trên đường, khách thuê xe sẽ phải tự khắc phục và trả khoản phí vá săm hoặc thay thế.</li>
+                            <li>Các vết xước, bẹp nhẹ không phải thay đồ mới thì người thuê phải bồi thường cho cho thuê số tiền theo báo giá thị trường.</li>
+                            <li>Trường hợp người thuê xe vi phạm an toàn giao thông dẫn tới xe bị giữ thì người thuê xe phải có tránh nhiệm đóng toàn bộ tiền các lỗi vi phạm và thời gian giữ xe vẫn tính là ngày cho thuê xe. Mọi chi phí đi lại, ăn ở, vvv…của bên cho thuê để giải quyết việc do bên thuê gây ra, bên thuê phải chịu hoàn toàn trách nhiệm chi trả.</li>
+                            <li>Trong thời gian thuê xe người thuê làm mất xe, gây tai nạn nghiêm trọng dẫn đến xe bị phá hủy hoàn toàn thì người thuê phải chịu trách nhiệm đền tiền, giá trị tương đương với giá trị xe được định giá tại thời điểm cho thuê xe.</li>
+                        </ul>
+                    </li>
+                    <li>Bên thuê phải có trách nhiệm trả xe đúng hạn như đã thống nhất trên hợp đồng. Trường hợp bên thuê muốn gia hạn thêm thời gian sử dụng thì phải liên hệ báo trước cho bên A, và khoản phát sinh thuê thêm sẽ vẫn được tính dựa trên bảng giá dịch vụ của bên A.</li>
+                </ol>
+            </div>
+
+            <div class="button-content button-content-4">
+                <h1>Trách nhiệm bên cho thuê</h1>
+                <ol class="text-bigger">
+                    <li>Bên cho thuê phải đảm bảo xe cho thuê có đầy đủ điều kiện an toàn lưu thông trên đường, đúng như cam kết thỏa thuận với khách hàng. Với mỗi xe cho thuê chỉ đi kèm 02 mũ bảo hiểm theo tiêu chuẩn.</li>
+                    <li>Cung cấp các giấy tờ sau cho người thuê xe: Bản photo giấy đăng ký xe, Bảo hiểm trách nhiệm dân sự xe. Có trách nhiêm giúp đỡ, hỗ trợ, hướng dẫn người thuê trong các tình huống phát sinh.</li>
+                </ol>
+            </div>
+        </div>
+
+
+        <div class="container-2">
+            <div class="button-container">
+                <button class="button active" onclick="changeContent2('content1')"><b>Thời gian thuê xe</b></button>
+                <button class="button active" onclick="changeContent2('content2')"><b>Thủ tục thuê xe</b></button>
+                <button class="button active" onclick="changeContent2('content3')"><b>Trách nhiệm bên thuê</b></button>
+                <button class="button active" onclick="changeContent2('content4')"><b>Trách nhiệm bên cho thuê</b></button>
+            </div>
+        
+            <div class="content" id="content-2"></div>
+            <div class="button-content button-content-1">
+                <h2>Thời gian thuê xe</h2>
+            </div>
+
+            <div class="button-content button-content-2">
+                <p>an toàn lưu thông trên đường, đúng như cam kết thỏa thuận với khách hàng.</p>
+            </div>
+
+            <div class="button-content button-content-3">
+                <p>Với mỗi xe cho thuê chỉ đi kèm 02 mũ bảo hiểm theo tiêu chuẩn.</p>
+            </div>
+
+            <div class="button-content button-content-4">
+                <p>Khách hàng có trách nhiệm bồi thường mọi thiệt hại do mình chính.</p>
+            </div>
+            
+        </div>
+
+    </div>
 
     <footer class="main-footer">
       <h1>Tatcalataivdank</h1>

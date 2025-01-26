@@ -4,7 +4,17 @@
   body, ul, li {
     margin: 0;
     padding: 0;
-    list-style: none;
+    /* list-style: none; */
+    font-family: Arial, sans-serif;
+  }
+
+  ul {
+    padding-left: 20px; /* Thụt đầu dòng */
+    list-style-position: outside;
+  }
+
+  ul ul {
+    padding-left: 30px; /* Mỗi cấp thụt thêm */
   }
 
   /* Phần nền mờ */
@@ -74,6 +84,7 @@
   }
 
   .desktop-menu{
+    list-style: none;
     display: block;
   }
   
@@ -151,7 +162,7 @@
   }
 
   #my-section {
-    background-image: url('./Image/image.png');
+    background-image: url('./Image/danxemay.png');
     position: absolute;
     top: 10;
     width: 100%;
@@ -164,6 +175,116 @@
     text-align: center;
     margin: auto;
     filter: blur(0px);
+  }
+
+  #my-about-policy-contact {
+    background-image: url('./Image/condaotoihon.webp');
+    position: absolute;
+    top: 10;
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-align: center;
+    margin: auto;
+    filter: blur(0px);
+  }
+
+  .about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+
+  .no-bullet {
+    list-style: none;
+  }
+
+  .make_it_bigger{
+    font-size: 50px;
+  }
+
+  .make_it_grey{
+    color: rgb(60, 60, 60);
+  }
+
+  .make_it_center1{
+    display: flex;
+    justify-content: center;
+  }
+
+  .make_it_center2{
+    display: none;
+  }
+
+  .text01{
+    visibility: hidden;
+  }
+
+  .policy .container-2 {
+    display: none;
+  }
+
+  .policy .container-1 {
+    margin-top: auto;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .policy .container-1 .table-top-align {
+    position: relative;
+    /* vertical-align: top; */
+  }
+
+  .policy .container-1 .button-container {
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 20px; */
+    flex-direction: column;
+  }
+
+  .policy .container-1 .button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: rgb(237, 237, 237);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .policy .container-1 .button:hover {
+    background-color: #5ed864;
+  }
+
+  .policy .container-1 .smaller-width{
+    width: 300px;
+    height: 600px;
+  }
+
+  .policy .container-1 .bigger-width{
+    width: 1000px;
+    text-align: start;
+    margin: 0 auto;
+  }
+
+  .policy .container-1 {
+    padding: 10px;
+  }
+
+  .button-content {
+    display: none;
+  }
+
+  .text-bigger{
+    font-size: 18px;
+    line-height: 1.8
   }
 
   .text0{
@@ -238,7 +359,7 @@
   }
   th, td {
     padding: 10px;
-    text-align: center; 
+    text-align: center;
   }
   th {
     background-color: #f2f2f2;
@@ -280,7 +401,8 @@
   body, ul, li {
     margin: 0;
     padding: 0;
-    list-style: none;
+    /* list-style: none; */
+    font-family: Arial, sans-serif;
   }
   
   a {
@@ -288,6 +410,15 @@
     color: black;
   }
   
+  ul {
+    padding-left: 20px; /* Thụt đầu dòng */
+    list-style-position: outside;
+  }
+
+  ul ul {
+    padding-left: 30px; /* Mỗi cấp thụt thêm */
+  }
+
   /* Thanh hotline */
   .top-bar {
     background-color: #3adb68; /* Màu xanh lá */
@@ -430,6 +561,90 @@
     text-align: center;
     margin: auto;
     filter: blur(0px);
+  }
+
+
+  #my-about-policy-contact {
+    background-image: url('./Image/condaotoihon.webp');
+    position: absolute;
+    top: 10;
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-align: center;
+    margin: auto;
+    filter: blur(0px);
+  }
+
+  .make_it_bigger{
+    font-size: 37px;
+  }
+
+  .make_it_center1{
+    display: none;
+  }
+
+  .make_it_center2{
+    display: flex;
+    justify-content: center;
+  }
+
+  .text01{
+    display: none;
+  }
+
+  .policy .container-1 {
+    display: none;
+  }
+
+  .policy .container-2 {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .policy .container-2 .button-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* margin-bottom: 20px; */
+  }
+
+  .policy .container-2 .button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: rgb(237, 237, 237);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .policy .container-2 .button:hover {
+    background-color: #5ed864;
+  }
+
+  .policy .container-2 .smaller-width{
+    width: 300px;
+  }
+
+  .policy .container-2 .bigger-width{
+    width: 1000px;
+    text-align: start;
+    margin: 0 auto;
+  }
+
+  .policy .container-2 {
+    padding: 10px;
+  }
+
+  .button-content {
+    display: none;
   }
 
   .text0{
