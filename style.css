@@ -168,6 +168,7 @@
 
   .text0{
     visibility: hidden;
+    color: #000;
   }
 
   .text1{
@@ -216,6 +217,47 @@
 
   .custom-button:hover {
       transform: scale(1.2);
+  }
+
+  .why-us {
+    background-color: white; /* Example background color */
+    height: 150vh;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse; 
+  }
+  th, td {
+    padding: 10px;
+    text-align: center; 
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+
+  /* Căn chỉnh chiều rộng */
+  td {
+    width: 100px; /* Chiều rộng cố định */
+    height: 250px; /* Chiều cao cố định */
+  }
+
+  /* Căn chỉnh chiều rộng cho th */
+  th {
+    width: 250px; /* Chiều rộng cố định cho tiêu đề */
+  }
+
+
+  .main-footer {
+    background-color: #f0f0f0; /* Example background color */
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+
+  .bottom-bar {
+    background-color: #f0f0f0; /* Example background color */
+    padding: 1rem;
+    /* margin-top: 2rem; */
   }
 }
 
