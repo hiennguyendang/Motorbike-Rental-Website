@@ -221,7 +221,15 @@
 
   .why-us {
     background-color: white; /* Example background color */
-    height: 150vh;
+    height: 135vh;
+  }
+
+  .service-table-1 {
+    font-family: Arial, sans-serif;
+  }
+
+  .service-table-2 {
+    display: none;
   }
 
   table {
@@ -442,11 +450,11 @@
   }
 
   .text2{
-      color: white;
-      margin-top: 50px;
-      font-size: 17px;
-      margin: auto;
-      filter: blur(0px);
+    color: white;
+    margin-top: 50px;
+    font-size: 17px;
+    margin: auto;
+    filter: blur(0px);
   }
 
   .text3{
@@ -590,6 +598,21 @@
   
   .navbar a:hover {
     background-color: #ddd;
+  }
+
+  .why-us {
+    background-color: white; /* Example background color */
+    height: 190vh;
+  }
+
+  .service-table-1 {
+    display: none;
+  }
+
+  .service-table-2 {
+    display: block;
+    font-family: Arial, sans-serif;
+    text-align: center;
   }
 
 }
