@@ -199,6 +199,26 @@
     font-family: Arial, sans-serif;
   }
 
+  .contact .container {
+    max-width: 300px;
+    margin-left: 40px ;
+    font-family: Arial, sans-serif;
+    background-color: #46ff65;
+    border: #000 1px solid;
+    border-radius: 20px;
+  }
+
+  .contact .container .make_it_center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-form {
+    max-width: 200px;
+    display: inline-block;
+    margin-left: 500px;
+  }
+
   .no-bullet {
     list-style: none;
   }
