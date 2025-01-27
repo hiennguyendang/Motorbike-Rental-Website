@@ -194,9 +194,10 @@
   }
 
   .about .container {
-    max-width: 1200px;
+    max-width: 80%;
     margin: 0 auto;
     font-family: Arial, sans-serif;
+    text-align: justify;
   }
 
   .contact-1{
@@ -490,6 +491,15 @@
   /* Căn chỉnh chiều rộng cho th */
   th {
     width: 250px; /* Chiều rộng cố định cho tiêu đề */
+  }
+
+  .text02{
+    display: none;
+  }
+
+  .set-max-width{
+    max-width: 80%;
+    margin: 0 auto;
   }
 
 
@@ -944,6 +954,8 @@
     display: block;
     font-family: Arial, sans-serif;
     text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
   }
 
   .contact-1{
@@ -1050,6 +1062,10 @@
   .contact-2 .container .make_it_center {
     display: flex;
     justify-content: center;
+  }
+
+  .text02{
+    visibility: hidden;
   }
 
 }
