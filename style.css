@@ -199,24 +199,120 @@
     font-family: Arial, sans-serif;
   }
 
-  .contact .container {
-    max-width: 300px;
-    margin-left: 40px ;
-    font-family: Arial, sans-serif;
-    background-color: #46ff65;
-    border: #000 1px solid;
-    border-radius: 20px;
+  .contact-1{
+    display: block;
   }
 
-  .contact .container .make_it_center {
-    display: flex;
-    justify-content: center;
+  .contact-2{
+    display: none;
   }
 
   .contact-form {
-    max-width: 200px;
-    display: inline-block;
-    margin-left: 500px;
+    max-width: 480px; /* Giới hạn chiều rộng tối đa */
+  }
+
+  .contact-1 .smaller-width{
+    width: 500px;
+    text-align: left;
+  }
+
+  .contact-1 .bigger-width{
+    width: 500px;
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  .form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .contact-1 h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .contact-1 hr {
+    margin-bottom: 20px;
+    border: 0;
+    height: 1px;
+    background: #ddd;
+  }
+
+  .contact-1 .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-1 .form-row {
+    display: flex;
+    gap: 10px;
+    width: 500px;
+  }
+  
+  .contact-1 .form-row input {
+    flex: 1;
+  }
+  
+  .contact-1 input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-1 input:focus, textarea:focus {
+    outline: none;
+    border-color: #4caf50;
+  }
+  
+  .contact-1 textarea {
+    resize: vertical;
+  }
+
+  .contain-1 .contain hr{
+    color: #000;
+  }
+  
+  .contact-1 button {
+    padding: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 500px;
+  }
+  
+  .contact-1 button:hover {
+    background-color: #e63939;
+  }
+
+  .contact-1 .container {
+    padding: 20px;
+    margin-left: 200px;
+    margin-bottom: 10 px;
+    max-width: 500px;
+    font-family: Arial, sans-serif;
+    background-color: #3adb68;
+    border: 1px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-1 .container .make_it_center {
+    display: flex;
+    justify-content: center;
   }
 
   .no-bullet {
@@ -848,6 +944,112 @@
     display: block;
     font-family: Arial, sans-serif;
     text-align: center;
+  }
+
+  .contact-1{
+    display: none;
+  }
+
+  .contact-2{
+    display: block;
+  }
+
+  .form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .contact-2 h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .contact-form {
+    max-width: 280px; /* Giới hạn chiều rộng tối đa */
+  }
+  
+  .contact-2 hr {
+    margin-bottom: 20px;
+    border: 0;
+    height: 1px;
+    background: #070707;
+  }
+
+  .contact-2 .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-2 .form-row {
+    display: flex;
+    gap: 10px;
+    width: 300px;
+  }
+  
+  .contact-2 .form-row input {
+    flex: 1;
+  }
+  
+  .contact-2 input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-2 input:focus, textarea:focus {
+    outline: none;
+    border-color: #4caf50;
+  }
+  
+  .contact-2 textarea {
+    resize: vertical;
+  }
+
+  .contain-2 .contain hr{
+    color: #000;
+  }
+  
+  .contact-2 button {
+    padding: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 300px;
+  }
+  
+  .contact-2 button:hover {
+    background-color: #e63939;
+  }
+
+  .contact-2 .container {
+    max-width: 300px;
+    font-family: Arial, sans-serif;
+    background-color: #3adb68;
+    padding: 20px;
+    border: 1px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .contact-2 .container .make_it_center {
+    display: flex;
+    justify-content: center;
   }
 
 }
