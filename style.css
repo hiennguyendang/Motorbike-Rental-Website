@@ -586,6 +586,49 @@
     margin-left: 20px;
     font-size: 13px;
   }
+
+  .main-rental-1{
+    background-color:darkgrey;
+  }
+
+  .main-rental-1 .rental-table{
+    width: 100px;
+    vertical-align:text-top;
+    color: white;
+    border-collapse: separate;
+    border-spacing: 30px;
+    margin-left: 150px;
+  }
+
+  .main-rental-1 h3{
+    font-size: 25px;
+  }
+
+  .main-rental-1 h2{
+    font-size: 35px;
+    color: rgba(255,200, 11, 255);
+  }
+
+  .main-rental-1 h1{
+    font-size: 35px;
+    color: rgba(255,200, 11, 255);
+    text-align: center;
+  }
+
+  .main-rental-1 .rental-table .rental-td{
+    background-color: white;
+  }
+
+  .main-rental-1 .rental-table .rental-td:hover{
+    background-color: #3adb68;
+  }
+
+  .main-rental-1 {
+    display: block;
+  }
+  .main-rental-2{
+    display: none;
+  }
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1153,6 +1196,13 @@
 
   .text02{
     visibility: hidden;
+  }
+
+  .main-rental-1 {
+    display: none;
+  }
+  .main-rental-2{
+    display: block;
   }
 
 }
