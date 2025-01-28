@@ -548,19 +548,19 @@
   .main-footer-2 {
     background-color: rgba(41,41,41,255); /* Example background color */
     padding: 20px;
-    height: 300px;
+    height: 500px;
   }
 
   .main-footer-2 h2{
     color: rgba(255,200, 11, 255);
-    font-size: 20px;
+    font-size: 25px;
   }
 
-  .main-footer-2 .footer-table {
-    width: 80%;
+  .main-footer-2 {
+    /* width: 80%; */
     vertical-align:text-top;
     color: white;
-    font-size: 14px;
+    font-size: 20px;
     margin: 0 auto;
     margin-top: -15px;
   }
@@ -653,6 +653,10 @@
     padding: 20px;
   }
 
+  .main-rental-1 .rental-table .rental-td ul{
+    line-height: 2;
+  }
+
   .main-rental-1 .rental-table .rental-td:hover{
     background-color: #3adb68;
   }
@@ -688,6 +692,10 @@
   .main-rental-2 .rental-table .rental-td{
     background-color: white;
     padding: 20px;
+  }
+
+  .main-rental-2 .rental-table .rental-td ul{
+    line-height: 1.25;
   }
 
   .main-rental-2 .rental-table .rental-td:hover{
