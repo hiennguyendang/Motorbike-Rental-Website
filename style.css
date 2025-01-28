@@ -106,6 +106,10 @@
     text-align: center;
     padding: 28px 10px;
   }
+
+  .make-it-green{
+    color: #3adb68;
+  }
   
   .main-header .menu ul li a:hover {
     background-color: rgba(0, 0, 0, 0.05);
@@ -113,7 +117,7 @@
   }
   .contact-boxes {
     position: fixed;
-    bottom: 20px; /* Khoảng cách từ đáy trang */
+    bottom: 30px; /* Khoảng cách từ đáy trang */
     right: 20px;  /* Khoảng cách từ cạnh phải */
     display: flex;
     flex-direction: column;
@@ -309,11 +313,14 @@
     border: 1px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: 19px;
   }
 
   .contact-1 .container .make_it_center {
     display: flex;
     justify-content: center;
+    color: white;
   }
 
   .no-bullet {
@@ -354,7 +361,7 @@
 
   .policy .container-1 .table-top-align {
     position: relative;
-    /* vertical-align: top; */
+    vertical-align: top;
   }
 
   .policy .container-1 .button-container {
@@ -383,6 +390,11 @@
   .policy .container-1 .smaller-width{
     width: 300px;
     height: 600px;
+    margin: 0 auto;
+  }
+
+  .policy .container-1 .make_it_go_up{
+    margin-top: 5px;
   }
 
   .policy .container-1 .bigger-width{
@@ -464,6 +476,7 @@
 
   .service-table-1 {
     font-family: Arial, sans-serif;
+    text-align: center;
   }
 
   .service-table-2 {
@@ -476,7 +489,7 @@
   }
   th, td {
     padding: 10px;
-    text-align: center;
+    /* text-align: center; */
   }
   th {
     background-color: #f2f2f2;
@@ -503,16 +516,75 @@
   }
 
 
+
   .main-footer {
-    background-color: #f0f0f0; /* Example background color */
-    padding: 2rem;
-    margin-top: 2rem;
+    background-color: rgba(41,41,41,255); /* Example background color */
+    padding: 20px;
+    height: 200px;
+  }
+
+  .main-footer .footer-table {
+    width: 80%;
+    vertical-align:text-top;
+    color: white;
+    font-size: 17px;
+    margin-left: 250px;
+    margin-top: -15px;
+  }
+
+  .main-footer .footer-table .self-defined-td{
+    padding: 0px;
+    height: 100px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .contact-1 .self-defined-td{
+    padding: 0px;
+    height: 20px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .contact-1 .make-it-smaller{
+    width: 200px;
+  }
+
+  .contact-2 .self-defined-td{
+    padding: 0px;
+    height: 20px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .contact-2 .make-it-smaller{
+    width: 200px;
+  }
+
+  .main-footer .self-defined-h2 {
+    font-size: 27px;
+    color: rgba(255,200, 11, 255);
   }
 
   .bottom-bar {
-    background-color: #f0f0f0; /* Example background color */
-    padding: 1rem;
-    /* margin-top: 2rem; */
+    background-color: #3adb68; /* Màu xanh lá */
+    color: white;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    height: 20px;
+  }
+
+  /* 255,200, 11, 255 */
+
+  .bottom-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    margin-left: 20px;
+    font-size: 13px;
   }
 }
 
@@ -623,9 +695,14 @@
     background-color: rgba(0, 0, 0, 0.05);
     color: #3adb68; /* Đổi màu khi hover */
   }
+
+  .make-it-green{
+    color: #3adb68;
+  }
+
   .contact-boxes {
     position: fixed;
-    bottom: 20px; /* Khoảng cách từ đáy trang */
+    bottom: 30px; /* Khoảng cách từ đáy trang */
     right: 20px;  /* Khoảng cách từ cạnh phải */
     display: flex;
     flex-direction: column;
@@ -749,6 +826,15 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+  }
+
+  @keyframes activeEffect {
+    0% {
+      background-color: green; /* Màu khi active */
+    }
+    100% {
+      background-color: gray; /* Trả về màu mặc định */
+    }
   }
 
   .policy .container-2 .button:hover {
@@ -991,7 +1077,7 @@
     margin-bottom: 20px;
     border: 0;
     height: 1px;
-    background: #070707;
+    background: #ddd;
   }
 
   .contact-2 .contact-form {
@@ -1028,7 +1114,7 @@
   }
 
   .contain-2 .contain hr{
-    color: #000;
+    color: #929191;
   }
   
   .contact-2 button {
@@ -1057,6 +1143,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
     margin-bottom: 30px;
+    color: white;
   }
 
   .contact-2 .container .make_it_center {
