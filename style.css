@@ -629,7 +629,7 @@
     color: white;
     border-collapse: separate;
     border-spacing: 30px;
-    margin-left: 150px;
+    margin: 0 auto;
   }
 
   .main-rental-1 h3{
@@ -649,6 +649,7 @@
 
   .main-rental-1 .rental-table .rental-td{
     background-color: white;
+    padding: 20px;
   }
 
   .main-rental-1 .rental-table .rental-td:hover{
@@ -665,7 +666,7 @@
     color: white;
     border-collapse: separate;
     border-spacing: 30px;
-    margin-left: 20px;
+    margin: 0 auto;
   }
 
   .main-rental-2 h3{
@@ -685,6 +686,7 @@
 
   .main-rental-2 .rental-table .rental-td{
     background-color: white;
+    padding: 20px;
   }
 
   .main-rental-2 .rental-table .rental-td:hover{
