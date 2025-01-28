@@ -623,6 +623,42 @@
     background-color: #3adb68;
   }
 
+  .main-rental-2{
+    background-color:darkgrey;
+  }
+
+  .main-rental-2 .rental-table{
+    width: 80%;
+    vertical-align: text-top;
+    color: white;
+    border-collapse: separate;
+    border-spacing: 30px;
+    margin-left: 20px;
+  }
+
+  .main-rental-2 h3{
+    font-size: 25px;
+  }
+
+  .main-rental-2 h2{
+    font-size: 35px;
+    color: rgba(255,200, 11, 255);
+  }
+
+  .main-rental-2 h1{
+    font-size: 35px;
+    color: rgba(255,200, 11, 255);
+    text-align: center;
+  }
+
+  .main-rental-2 .rental-table .rental-td{
+    background-color: white;
+  }
+
+  .main-rental-2 .rental-table .rental-td:hover{
+    background-color: #3adb68;
+  }
+
   .main-rental-1 {
     display: block;
   }
