@@ -5,166 +5,263 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <link rel="apple-touch-icon" sizes="57x57" href="./ico/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./ico/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./ico/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./ico/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./ico/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./ico/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./ico/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./ico/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./ico/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./ico/android-icon-192x192.png">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    
+    <!-- Favicon -->
+    <link rel="icon" href="./ico/favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/png" sizes="32x32" href="./ico/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./ico/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./ico/favicon-16x16.png">
-    <link rel="manifest" href="./ico/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="./ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./ico/android-icon-192x192.png">
     <meta name="msapplication-TileImage" content="./ico/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
+
     <title>Tatcalataivdank</title>
 </head>
 <body>
-  <div id="popup-modal" class="modal">
-    <div class="modal-content slide-in">
-      <span class="close-btn" onclick="closeModal()">&times;</span>
-      <nav>
-        <h2>Menu</h2>
-        <ul class="desktop-menu-when-open navbar">
-          <li><a href="./index.html"><img src="./Image/home.png" width="16px"> &nbsp; <span class="make-it-green">TRANG CHỦ</span></a></li>
-          <li><a href="#"><span class="text10">THUÊ XE</span></a></li>
-          <li><a href="./Source/rent.html"><img src="./Image/motorcycle.png" width="16px"> &nbsp; THUÊ XE MÁY</a></li>
-          <li><a href="#"><span class="text10">THUÊ XE</span></a></li>
-          <li><a href="./Source/about.html"><img src="./Image/info.png" width="16px"> &nbsp; GIỚI THIỆU</a></li>
-          <li><a href="#"><span class="text10">THUÊ XE</span></a></li>
-          <li><a href="./Source/policy.html"><img src="./Image/balance.png" width="16px"> &nbsp; CHÍNH SÁCH</a></li>
-          <li><a href="#"><span class="text10">THUÊ XE</span></a></li>
-          <li><a href="./Source/contact.html"><img src="./Image/telephone.png" width="16px"> &nbsp; LIÊN HỆ</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
 
-    <div class="top-bar">
+    <!-- Top bar -->
+    <!-- <div class="top-bar">
       <div class="container">
         <div class="hotline">
-          <b class="icon-phone"> <img src="./Image/call.png" width="14px"> </b> <div >Hotline: 0123456789</div>
+          <p> <i class="fa-solid fa-phone"></i> Hotline: 0123456789</p>
         </div>
         <div class="contact-info">
-          <img src="./Image/—Pngtree—mail icon_4479730.png" width="27px"> <p> abcdef@xyz.com &nbsp; <span class="make_it_fade">|</span> &nbsp; <img src="./Image/clock.png" width="16px"> 24/24 &nbsp; <span class="make_it_fade">|</span> &nbsp; <b class="icon-phone"> <img src="./Image/call.png" width="14px"> </b> 0123456789</p>
+          <p> <i class="fa-solid fa-envelope"></i> abcdef@xyz.com 
+              <span class="make_it_fade">&nbsp; | &nbsp;</span> 
+              <i class="fa-solid fa-clock"></i> 24/24 
+              <span class="make_it_fade">&nbsp; | &nbsp;</span> 
+              <i class="fa-solid fa-phone"></i> 0123456789</p>
         </div>
       </div>
-    </div>
+    </div> -->
 
+    <!-- Header -->
     <header class="main-header">
+      <!-- Navigation bar for large views -->
       <div class="container">
         <div class="logo">
           <a href="#"><img src="./ico/android-icon-192x192.png" alt="Logo" /></a>
         </div>
         <nav class="menu">
           <ul  class="desktop-menu" id="menu">
-            <li><a href="./index.html"><img src="./Image/home.png" width="16px"> &nbsp;<span class="make-it-green">TRANG CHỦ</span></a></li>
-            <li><a href="./Source/rent.html"><img src="./Image/motorcycle.png" width="16px"> &nbsp;THUÊ XE MÁY</a></li>
-            <li><a href="./Source/about.html"><img src="./Image/info.png" width="16px"> &nbsp;GIỚI THIỆU</a></li>
-            <li><a href="./Source/policy.html"><img src="./Image/balance.png" width="16px"> &nbsp;CHÍNH SÁCH</a></li>
-            <li><a href="./Source/contact.html"><img src="./Image/telephone.png" width="16px"> &nbsp;LIÊN HỆ</a></li>
+            <li><a href="./index.html"> <span class="make-it-green"> <i class="fa-solid fa-house"></i> TRANG CHỦ</span></a></li>
+            <li><a href="./Source/rent.html"> <i class="fa-solid fa-motorcycle"></i> THUÊ XE MÁY</a></li>
+            <li><a href="./Source/about.html"> <i class="fa-solid fa-circle-info"></i> GIỚI THIỆU</a></li>
+            <li><a href="./Source/policy.html"> <i class="fa-solid fa-scale-balanced"></i> CHÍNH SÁCH</a></li>
+            <li><a href="./Source/contact.html"> <i class="fa-solid fa-phone"></i> LIÊN HỆ</a></li>
           </ul>
         </nav>
         <span class="mobile-menu"><button class="expand-btn" onclick="openModal()">☰</button></span>
       </div>
+
+      <!-- Navigation bar for small views -->
+      <div id="popup-modal" class="modal">
+        <div class="modal-content slide-in">
+          <span class="close-btn" onclick="closeModal()">&times;</span>
+          <nav>
+            <h1>Menu</h1>
+            <ul class="desktop-menu-when-open navbar">
+              <li><a href="./index.html"> <span class="make-it-green"> <i class="fa-solid fa-house"></i> TRANG CHỦ</span></a></li>
+              <li><a href="./Source/rent.html"> <i class="fa-solid fa-motorcycle"></i> THUÊ XE MÁY</a></li>
+              <li><a href="./Source/about.html"> <i class="fa-solid fa-circle-info"></i> GIỚI THIỆU</a></li>
+              <li><a href="./Source/policy.html"> <i class="fa-solid fa-scale-balanced"></i> CHÍNH SÁCH</a></li>
+              <li><a href="./Source/contact.html"> <i class="fa-solid fa-phone"></i> LIÊN HỆ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
 
     <div class="contact-boxes">
-      <a href="https://zalo.me/your-link" class="box zalo-box">Chat Zalo</a>
-      <a href="https://facebook.com/your-link" class="box facebook-box">Chat Facebook</a>
-      <a href="tel:0123456789" class="box hotline-box">Hotline: 0123456789</a>
+      <a href="https://zalo.me/your-link" class="box zalo-box"> <img src="./Image/icons8-zalo-100.png" alt="zalo" width="37px"></a>
+      <a href="https://facebook.com/your-link" class="box facebook-box"> <i class="fa-brands fa-facebook-f"></i> </a>
+      <a href="tel:0123456789" class="box hotline-box"> <i class="fa-solid fa-phone"></i> </a>
     </div>
 
+    <!-- Brief description -->
     <div id="my-section">
-      <p class="text0">Tatcalataivdank</p>
-      <span class="text00"><p class="text0">Chao mung ban den voi Tatcalataivdank</p></span>
-      <p class="text0">Chao mung ban den voi Tatcalataivdank</p>
+      <p class="text0">Thuê xe côn đảo</p>
+      <p class="text01">Thuê xe côn đảo</p>
       <div class="set-max-width">
-        <h1 class="text1">Dịch vụ cho thuê xe máy sân bay <span class="text3">Côn Đảo</span></h1> <br>
-        <p class="text2">Chào mừng bạn đến với dịch vụ cho thuê xe máy tại Côn Đảo! <br>
-          Chúng tôi cung cấp các loại xe máy chất lượng, đảm bảo an toàn và tiện lợi cho việc di chuyển của bạn khi đến thăm thành phố biển xinh đẹp này. <br>
-          Hãy liên hệ với chúng tôi ngay để đặt xe và trải nghiệm chuyến đi tuyệt vời tại Côn Đảo! <br>
-        </p>
+        <h1>Dịch vụ cho thuê xe máy sân bay <span class="make-it-yellow">Côn Đảo</span></h1> <br>
       </div>
-      <span class="text00"><p class="text0">Chao mung ban den voi Tatcalataivdank</p></span>
-      <a href="tel:0123456789"><button class="custom-button"> <img src="./Image/call.png" width="14px"> &nbsp; Đặt dịch vụ</button></a>
+      <p class="text0 text7">Thuê xe côn đảo</p>
+      <a href="tel:0123456789"><button class="custom-button"> <i class="fa-solid fa-phone"></i> Đặt dịch vụ</button></a>
+    </div>   
+
+    <div class="text0">
+      <p>Thuê xe côn đảo</p>
+      <p>Thuê xe côn đảo</p>
+      <p>Thuê xe côn đảo</p>
+      <p>Thuê xe côn đảo</p>
+      <p>Thuê xe côn đảo</p>
+      <p>Thuê xe côn đảo</p>
+      <p>Thuê xe côn đảo</p>
+      <p>Thuê xe côn đảo</p>
     </div>
 
-    <div class="why-us">
-      <p class="text0">Lorem ipsum dolor sit amet.</p>
-      <p class="text0">Lorem ipsum dolor sit amet.</p>
-      <p class="text0">Lorem ipsum dolor sit amet.</p>
-      <p class="text0">Lorem ipsum dolor sit amet.</p>
-      <p class="text0">Lorem ipsum dolor sit amet.</p>
-      <p class="text0">Lorem ipsum dolor sit amet.</p>
-      <p class="text0">Lorem ipsum dolor sit amet.</p>
-      <p class="text0">Lorem ipsum dolor sit amet.</p>
-      <p class="text0">Lorem ipsum dolor sit amet.</p>
-      <p class="text0">Lorem ipsum dolor sit amet.</p>
-      <p class="text0">Lorem ipsum dolor sit amet.</p>
-      <p class="text0">Lorem ipsum dolor sit amet.</p>
-      <p class="text0">Lorem ipsum dolor sit amet.</p>
-      <p class="text0">Lorem ipsum dolor sit amet.</p>
-
-
-      <table class="service-table-1">
+    <div class="background">
+      <div class="text0">
+        <p>Thuê xe côn đảo</p>
+        <p>Thuê xe côn đảo</p>
+      </div>
+      <table class="mois-table">
         <tr>
-          <td><img src="./Image/money.png" width="120px"> <br>
-            <h1>KHÔNG TIỀN ĐẶT CỌC</h1>
-            <p>Khách hàng không phải đặt cọc bất cứ khoản tiền cho việc thuê xe máy nào nếu có đầy đủ <br>
-              các giấy tờ yêu cầu được quy định trong chính sách của cty. Chi tiết thủ tục giấy tờ vui <br>
-              lòng xem tại mục chính sách thuê xe của chúng tôi.</p>
+          <td class="self-defined-td">
+            <div class="slider-controls">
+              <button class="prev-button">Prev</button>
+            </div>
           </td>
-          <td><img src="./Image/bike.png" width="100px"> <br>
-            <h1>GIAO, TRẢ XE TẬN NƠI</h1>
-            <p>Chúng tôi cung cấp dich vụ giao xe tận nơi cho bạn miễn phí trong bán kính <br> 3km đầu tiên,
-               xa hơn thì phụ thu 10.000đ/1km .</p>
+          <td class="self-defined-td larger">
+            <div class="slider-container">
+              <div class="slider">
+                <div class="slide">
+                  <img src="./Image/xevisionthuong.png" alt="Kawasaki Vulcan 650 S" width="250px">
+                  <div class="slide-content">
+                    <h2>Kawasaki Vulcan</h2>
+                    <p>from 80 €/day</p>
+                    <button>VIEW</button>
+                  </div>
+                </div>
+                <div class="slide">
+                  <img src="./Image/xevisionthuong.png" alt="Kawasaki Vulcan 650 S" width="250px">
+                  <div class="slide-content">
+                    <h2>Kawasaki Vulcan</h2>
+                    <p>from 80 €/day</p>
+                    <button>VIEW</button>
+                  </div>
+                </div>
+                <div class="slide">
+                  <img src="./Image/xevisionthuong.png" alt="Kawasaki Vulcan 650 S" width="250">
+                  <div class="slide-content">
+                    <h2>Kawasaki Vulcan</h2>
+                    <p>from 80 €/day</p>
+                    <button>VIEW</button>
+                  </div>
+                </div>
+                <div class="slide">
+                  <img src="./Image/xevisionthuong.png" alt="Kawasaki Vulcan 650 S" width="250px">
+                  <div class="slide-content">
+                    <h2>Kawasaki Vulcan</h2>
+                    <p>from 80 €/day</p>
+                    <button>VIEW</button>
+                  </div>
+                </div>
+                <div class="slide">
+                  <img src="./Image/xevisionthuong.png" alt="Kawasaki Vulcan 650 S" width="250px">
+                  <div class="slide-content">
+                    <h2>Kawasaki Vulcan</h2>
+                    <p>from 80 €/day</p>
+                    <button>VIEW</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </td>
-        </tr>
-        <tr>
-          <td><img src="./Image/gas-station.png" width="100px"> <br>
-            <h1>HỖ TRỢ 1 LÍT XĂNG</h1>
-            <p>Mỗi xe được hỗ trợ 1 lít xăng và trang bị sẵn 2 nón bảo hiểm đẹp.</p>
-            <p class="text0">Mỗi xe được hỗ trợ 1 lít xăng và trang bị sẵn 2 nón bảo hiểm đẹp.</p>
-          </td>
-          <td><img src="./Image/hotel.png" width="100px"> <br>
-            <h1>HỖ TRỢ THUÊ KHÁCH SẠN</h1>
-            <p>Hỗ trợ thuê villa, homestay, hotel, căn hộ, đặt các dịch vụ, nhà hàng ăn uống, <br>
-              đồ lễ,... theo yêu cầu khách hàng.</p>
+          <td class="self-defined-td">
+            <div class="slider-controls">
+              <button class="next-button">Next</button>
+            </div>
           </td>
         </tr>
       </table>
+      <!-- <div class="slider-container">
+        <div class="slider">
+          <div class="slide">
+            <img src="./Image/xevisionthuong.png" alt="Kawasaki Vulcan 650 S" width="350px">
+            <div class="slide-content">
+              <h2>Kawasaki Vulcan 650 S</h2>
+              <p>from 80 €/day</p>
+              <button>VIEW</button>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="./Image/xevisionthuong.png" alt="Sym Symphony SR 125" width="350px">
+            <div class="slide-content">
+              <h2>Sym Symphony SR 125</h2>
+              <p>from 25 €/day</p>
+              <button>VIEW</button>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="./Image/xevisionthuong.png" alt="BMW F850GS" width="350px">
+            <div class="slide-content">
+              <h2>BMW F850GS</h2>
+              <p>from 116 €/day</p>
+              <button>VIEW</button>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="./Image/xevisionthuong.png" alt="Honda CB 500X" width="350px">
+            <div class="slide-content">
+              <h2>Honda CB 500X</h2>
+              <p>from 90 €/day</p>
+              <button>VIEW</button>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="./Image/xevisionthuong.png" alt="Kawasaki Vulcan 650 S" width="350px">
+            <div class="slide-content">
+              <h2>Kawasaki Vulcan 650 S</h2>
+              <p>from 80 €/day</p>
+              <button>VIEW</button>
+            </div>
+          </div>
+          <div class="slide">
+              <img src="./Image/xevisionthuong.png" alt="Sym Symphony SR 125" width="350px">
+              <div class="slide-content">
+                <h2>Sym Symphony SR 125</h2>
+                <p>from 25 €/day</p>
+                <button>VIEW</button>
+              </div>
+          </div>
+          <div class="slide">
+              <img src="./Image/xevisionthuong.png" alt="BMW F850GS" width="350px">
+              <div class="slide-content">
+                <h2>BMW F850GS</h2>
+                <p>from 116 €/day</p>
+                <button>VIEW</button>
+              </div>
+          </div>
+          <div class="slide">
+              <img src="./Image/xevisionthuong.png" alt="Honda CB 500X" width="350px">
+              <div class="slide-content">
+                <h2>Honda CB 500X</h2>
+                <p>from 90 €/day</p>
+                <button>VIEW</button>
+              </div>
+          </div>
+        </div>
 
-      <div class="service-table-2">
-          <img src="./Image/money.png" width="120px"> <br>
-            <h2>KHÔNG TIỀN ĐẶT CỌC</h2>
-            <p>Khách hàng không phải đặt cọc bất cứ khoản tiền cho 
-              việc thuê xe máy nào nếu có đầy đủ các giấy tờ yêu cầu được quy
-              định trong chính sách của cty. Chi tiết thủ tục giấy tờ vui
-              lòng xem tại mục chính sách thuê xe của chúng tôi.</p>
-          <img src="./Image/bike.png" width="100px"> <br>
-            <h2>GIAO, TRẢ XE TẬN NƠI</h2>
-            <p>Chúng tôi cung cấp dich vụ giao xe tận nơi cho bạn miễn phí 
-               trong bán kính 3km đầu tiên, xa hơn thì phụ thu 10.000đ/1km .</p>
-          <img src="./Image/gas-station.png" width="100px"> <br>
-            <h2>HỖ TRỢ 1 LÍT XĂNG</h2>
-            <p>Mỗi xe được hỗ trợ 1 lít xăng và trang bị sẵn 2 nón bảo hiểm đẹp.</p>
-            <p class="text01">Mỗi xe được hỗ trợ 1 lít xăng và trang bị sẵn 2 nón bảo hiểm đẹp.</p>
-          <img src="./Image/hotel.png" width="100px"> <br>
-            <h2>HỖ TRỢ THUÊ KHÁCH SẠN</h2>
-            <p>Hỗ trợ thuê villa, homestay, hotel, căn hộ, đặt các dịch vụ,
-               nhà hàng ăn uống, đồ lễ theo yêu cầu khách hàng.</p>
+        <div class="slider-controls">
+          <button class="prev-button">Prev</button>
+          <button class="next-button">Next</button>
+        </div> -->
+    </div>
+  
+  
+  
+
+    <!-- Why us -->
+    <div class="why-us">
+      <!-- Add some text for better layout -->      
+      <div class="service">
+        <h3> <i class="fa-solid fa-check"></i> Không tiền đặt cọc</h3>
+        <h3> <i class="fa-solid fa-check"></i> Giao, trả xe tận nơi</h3>
+        <h3> <i class="fa-solid fa-check"></i> Hỗ trợ thuê khách sạn</h3>
+        <h3> <i class="fa-solid fa-check"></i> Miễn phí hủy và sửa đổi</h3>
+        <h3> <i class="fa-solid fa-check"></i> Liên hệ 24/24</h3>
       </div>
     </div>
 
 
-    <div class="main-rental-1">
-      <p class="text0">Lorem ipsum dolor sit amet.</p>
+    <!-- <div class="main-rental-1">
+      <p class="text0">Thuê xe côn đảo</p>
       <h1>DANH MỤC XE MÁY</h1>
       <table class="rental-table">
         <tr>
@@ -313,7 +410,7 @@
 
 
     <div class="main-rental-2">
-      <p class="text0">Lorem ipsum dolor sit amet.</p>
+      <p class="text0">Thuê xe côn đảo</p>
       <h1>DANH MỤC XE MÁY</h1>
       <table class="rental-table">
         <tr>
@@ -470,7 +567,7 @@
           </td>
         </tr>
       </table>
-    </div>
+    </div> -->
 
     <footer class="main-footer-1">
       <table class="footer-table">
