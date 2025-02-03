@@ -84,16 +84,16 @@ const slider = document.querySelector('.slider');
 const dots = document.querySelectorAll('.dot');
 
 function updateSliderPosition() {
-    slider.style.transform = `translateX(-${currentIndex * 311.6}px)`; // Mỗi slide có chiều rộng là 350px
+    slider.style.transform = `translateX(-${currentIndex * 290}px)`; // Mỗi slide có chiều rộng là 350px
     updateActiveDot();
 }
 
 prevButton.addEventListener('click', () => {
-    currentIndex = (currentIndex === 0) ? totalSlides - 3 : currentIndex - 1;
+    currentIndex = (currentIndex === 0) ? totalSlides - 5 : currentIndex - 1;
     updateSliderPosition();
 });
 
 nextButton.addEventListener('click', () => {
-    currentIndex = (currentIndex === totalSlides - 3) ? 0 : currentIndex + 1;
+    currentIndex = (currentIndex === totalSlides - 5) ? 0 : currentIndex + 1;
     updateSliderPosition();
 });

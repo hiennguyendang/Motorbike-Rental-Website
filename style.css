@@ -1,9 +1,9 @@
-/* Lagger screen sizes 
+/* Larger screen sizes 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-@media (max-width: 2000px) {
+@media (max-width: 3000px) {
   /* Default styles */
   body, ul, li {
     margin: 0;
@@ -100,8 +100,6 @@
     margin: 0 auto;
   }
 
-  /* Desktop menu
-  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
   .desktop-menu{
     list-style: none;
     display: block;
@@ -135,7 +133,6 @@
     color: #3adb68; /* Đổi màu khi hover */
   }
 
-    /* Mobile menu */
   .mobile-menu{
     display: none;
   }
@@ -173,17 +170,14 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   }
   
-    /* Box Zalo */
   .contact-boxes .zalo-box {
     background-color: #88c451;
   }
   
-    /* Box Facebook */
   .contact-boxes .facebook-box {
     background-color: #1877f2;
   }
   
-    /* Box Hotline */
   .contact-boxes .hotline-box {
     background-color: #28a745;
   }
@@ -194,7 +188,7 @@
     transition: 0.3s ease;
   }
 
-  
+
   /* Brief description style definition
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
   #my-section {
@@ -213,6 +207,153 @@
     filter: blur(0px);
     display: block;
   }
+
+  .custom-button {
+    background-color: transparent; /* Nền trong suốt */
+    border: 2px solid white; /* Viền trắng */
+    color: white; /* Màu chữ trắng */
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px; /* Làm tròn góc */
+    cursor: pointer; /* Thay đổi con trỏ chuột khi di chuột qua */
+    transition: all 0.3s ease-in-out; /* Hiệu ứng chuyển đổi mượt mà */
+  }
+
+  .custom-button:hover {
+      transform: scale(1.2);
+  }
+
+    /* Some available bikes style definition
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  .background{
+    background-color:lightblue;
+    height: 80vh;
+  }
+
+  .mois-title{
+    font-size: 30px;
+    color: brown;
+  }
+
+  .slider-container {
+    position: relative;
+    width: 76%; /* Điều chỉnh phù hợp với chiều rộng của 4 ảnh */
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .slide {
+    width: 250px; /* Chỉnh kích thước của từng ảnh */
+    margin-right: 20px; /* Khoảng cách giữa các ảnh */
+    position: relative;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 6px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .slider-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-50%);
+  }
+
+  .prev-button, .next-button {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+
+
+  /* Why us style definition
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  .why-us {
+    background-color: white; /* Example background color */
+    display: block;
+  }
+
+  .service {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .service h3{
+    font-size: 15px;
+    color: #3adb68;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .three-steps-2{
+    display: none;
+  }
+  
+  .three-steps-1{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .three-steps-1 h1{
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(252, 0, 0);
+    filter: blur(0px);
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .three-steps-1 table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  .three-steps-1 i{
+    font-size: 50px;
+    color: rgb(252, 0, 0);
+  }
+
+  /* Google map style definition */
+  .map-container {
+    display: flex;
+    justify-content: center;  /* Canh giữa theo chiều ngang */
+    align-items: center;      /* Canh giữa theo chiều dọc */
+    height: 80vh;            /* Chiều cao của phần tử chứa (100% chiều cao cửa sổ) */
+  }
+
+  .google-map {
+    width: 80%;   /* Chiều rộng của bản đồ */
+    height: 80%;
+    border: none; /* Bỏ border nếu có */
+  }
+
+
+
+
+
+
+
+
+
 
   #my-about-policy-contact {
     background-image: url('./Image/condaotoihon.webp');
@@ -256,20 +397,7 @@
     font-size: 12px;
   }
 
-  .custom-button {
-    background-color: transparent; /* Nền trong suốt */
-    border: 2px solid white; /* Viền trắng */
-    color: white; /* Màu chữ trắng */
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 10px; /* Làm tròn góc */
-    cursor: pointer; /* Thay đổi con trỏ chuột khi di chuột qua */
-    transition: all 0.3s ease-in-out; /* Hiệu ứng chuyển đổi mượt mà */
-  }
 
-  .custom-button:hover {
-      transform: scale(1.2);
-  }
 
   .about .container {
     max-width: 80%;
@@ -499,28 +627,6 @@
   .make_it_white{
       color: white;
   }
-  
-  
-
-  .why-us {
-    background-color: white; /* Example background color */
-    height: 135vh;
-    display: block;
-  }
-
-  .service {
-    display: flex;
-    justify-content: center;
-    width: 45%;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  .service h3{
-    font-size: 15px;
-    color: #3adb68;
-  }
 
   .text02{
     display: none;
@@ -725,87 +831,20 @@
 
 
 
-  .background{
-    background-color:lightblue;
-    height: 80vh;
-  }
+  
+}
 
-  .mois-table{
-    width: 100%;
-    border-collapse: collapse;
-    margin: 0 auto;
-  }
 
-  .mois-table td{
-    padding: 0px;
-    height: 300px;
-    vertical-align: top;
-  }
 
-  .mois-table .self-defined-td{
-    width: 200px;
-  }
+/* Medium screen sizes
+ //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+@media (max-width: 1000px) and (min-width: 720px) {
 
-  .mois-table .larger{
-    max-width: 750px;
-  }
-
-  .slider-container {
-    display: flex;
-    position: relative;
-    width: 100%; /* Điều chỉnh phù hợp với chiều rộng của 4 ảnh */
-    overflow: hidden;
-    margin: 0 auto;
-  }
-
-  .slider {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-
-  .slide {
-    min-width: 250px; /* Chỉnh kích thước của từng ảnh */
-    margin-left: 10px; /* Khoảng cách giữa các ảnh */
-    margin-right: 10px; /* Khoảng cách giữa các ảnh */
-    height: 400px;
-    position: relative;
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    border: #ffffff 1px solid;
-    border-radius: 25px;
-    box-shadow: 4px 6px 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .slider-controls {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transform: translateY(-50%);
-  }
-
-  .prev-button, .next-button {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    margin-top: 600px;
-  }
-
-  .prev-button {
-    margin-left: 100px;
-  }
-
-  .next-button {
-    margin-left: 50px;
-  }
-
-  .prev-button:hover, .next-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
 }
 
 /* Smaller screen sizes
@@ -970,10 +1009,69 @@
   }
 
   /* Why us style definition
-  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */  
   .service {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
     width: 90%;
   }
+
+  .three-steps-1{
+    display: none;
+  }
+
+  .three-steps-2{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .three-steps-2 h1{
+    margin-top: 50px;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(252, 0, 0);
+    filter: blur(0px);
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .three-steps-2 h2{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+  }
+
+  .three-steps-2 div{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  .three-steps-2 i{
+    font-size: 50px;
+    color: rgb(252, 0, 0);
+  }
+
+  /* Google map style definition */
+  .map-container {
+    height: 70vh;            /* Chiều cao của phần tử chứa (100% chiều cao cửa sổ) */
+  }
+  .google-map{
+    width: 90%;
+    height: 50%;
+  }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1061,13 +1159,6 @@
 
   .make_it_white{
       color: white;
-  }
-
-  
-
-  .why-us {
-    background-color: white; /* Example background color */
-    height: 200vh;
   }
 
   .contact-1{
