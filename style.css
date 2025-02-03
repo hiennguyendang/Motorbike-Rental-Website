@@ -50,12 +50,36 @@
     width: 250px; /* Chiều rộng cố định cho tiêu đề */
   }
 
+  /* Stupid text */
+  /* Hide on both laptop and mobile */
+  .text0{ 
+    visibility: hidden;
+  }
+
+  /* Display on laptop but hide on mobile */
+  .text01{ 
+    visibility: hidden;
+    display: block;
+  }
+
+  /* Display on mobile but hide on laptop */
+  .text02 { 
+    display: none;
+  }
+
+  .text7{
+    font-size: 12px;
+    visibility: hidden;
+  }
+
 
   /* Index.html 
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  
+  
   /* Top bar style definition
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
   .top-bar {
@@ -87,6 +111,7 @@
   .make_it_fade {
     opacity: 40%;
   }
+
   
   /* Header style definition
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -217,6 +242,8 @@
     display: block;
   }
 
+  
+
   .custom-button {
     background-color: transparent; /* Nền trong suốt */
     border: 2px solid white; /* Viền trắng */
@@ -242,25 +269,33 @@
     text-shadow: 2px 2px 4px #000000;
   }
 
-    /* Some available bikes style definition
+  .make-it-yellow{
+    color: rgba(255,200, 11, 255);
+  }
+
+
+  /* Some available bikes style definition
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
   .background{
     background-color:rgb(235, 235, 235);
-    height: 80vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .mois-title{
-    display: inline-block;
-    font-size: 30px;
+    margin-top: 0px;
+    font-size: 50px;
+    font-weight: bold;
     color: rgba(255,200, 11, 255);
+    filter: blur(0px);
     text-shadow: 1px 1px 1px #000000;
   }
 
   .slider-container {
     position: relative;
-    width: 76%; /* Điều chỉnh phù hợp với chiều rộng của 4 ảnh */
     overflow: hidden;
     margin: 0 auto;
+    width: 76%;
   }
 
   .slider {
@@ -269,7 +304,7 @@
   }
 
   .slide {
-    width: 250px; /* Chỉnh kích thước của từng ảnh */
+    min-width: 250px; /* Chỉnh kích thước của từng ảnh */
     margin-right: 20px; /* Khoảng cách giữa các ảnh */
     position: relative;
     background-color: white;
@@ -280,7 +315,7 @@
 
   .slider-controls {
     position: absolute;
-    top: 50%;
+    top: 60%;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -289,8 +324,9 @@
   }
 
   .prev-button, .next-button {
-    background-color: transparent;
+    background-color: rgb(210, 210, 210);
     color: rgb(0, 0, 0);
+    opacity: 0.5;
     font-size: 20px;
     padding: 10px;
     border: none;
@@ -303,6 +339,8 @@
   .why-us {
     background-color: white; /* Example background color */
     display: block;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .service {
@@ -338,7 +376,7 @@
     margin-top: 50px;
     font-size: 50px;
     font-weight: bold;
-    color: rgb(252, 0, 0);
+    color: #7D7;
     filter: blur(0px);
     text-shadow: 1px 1px 1px #000000;
   }
@@ -353,6 +391,145 @@
     font-size: 50px;
     color: rgb(90, 88, 88);
   }
+
+
+  /* Contact style definition
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  .contact{
+    padding: 20px;
+    background-color: rgb(235, 235, 235);
+    /* height: 60vh; */
+  }
+
+  .contact .container  {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .contact .container h1 {
+    margin-top: 0px;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgba(255,200, 11, 255);
+    filter: blur(0px);
+    text-shadow: 1px 1px 1px #000000;
+    text-align: center;
+  }
+
+  .contact .container p {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+  }
+
+  .contact .container h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .contact .container hr {
+    margin-bottom: 20px;
+    border: 0;
+    height: 1px;
+    background: #ddd;
+  }
+
+  .contact .container .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact .container .form-row {
+    display: flex;
+    gap: 10px;
+    width: 500px;
+  }
+  
+  .contact .container .form-row input {
+    flex: 1;
+  }
+  
+  .contact .container input, textarea {
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact .container input:focus, textarea:focus {
+    outline: none;
+    border-color: #4caf50;
+  }
+  
+  .contact .container textarea {
+    resize: vertical;
+    font-family: Arial, sans-serif;
+  }
+
+  .contain .contain hr{
+    color: #000;
+  }
+  
+  .contact .container button {
+    padding: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 500px;
+  }
+  
+  .contact .container button:hover {
+    background-color: #e63939;
+  }
+
+  .contact .container .container .make_it_center {
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+
+  .contact .container td{
+    padding: 0px;
+    height: 20px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .contact .container .make-it-smaller{
+    width: 200px;
+  }
+
+  .contact .container .self-defined-td{
+    padding: 0px;
+    height: 20px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .contact .container .make-it-smaller{
+    width: 200px;
+  }
+
 
   /* Google map style definition 
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -370,193 +547,76 @@
   }
 
 
+  /* Footer style definition  
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  .main-footer {
+    background-color: rgba(41,41,41,255); /* Example background color */
+    padding: 20px;
+  }
+  
+  .main-footer .footer {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-basis: 500px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-footer a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .footer-contact, .footer-about, .footer-logo {
+    flex-basis: 350px;
+    color: white;
+  }  
+
+  .footer {
+    /* width: 80%; */
+    vertical-align:text-top;
+    color: white;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: -15px;
+  }
+
+  .footer h2{
+    color: rgba(255,200, 11, 255);
+    font-size: 25px;
+  }
 
 
-
-
-
-
-
-
-  #my-about-policy-contact {
-    background-image: url('./Image/condaotoihon.webp');
-    position: absolute;
-    top: 10;
-    width: 100%;
-    height: 300px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  /* Bottom bar style definition
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  .bottom-bar {
+    background-color: #7D7; /* Màu xanh lá */
+    color: white;
+    font-size: 18px;
     font-family: 'Arial', sans-serif;
-    color: white;
+    font-weight: bold;
+    height: 20px;
+  }
+
+  .bottom-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
     text-align: center;
-    margin: auto;
-    filter: blur(0px);
-  }
-
-  
-
-  .make-it-yellow{
-      color: rgba(255,200, 11, 255);
-  }
-
-  .text7{
-    font-size: 12px;
+    margin-left: 20px;
+    font-size: 13px;
   }
 
 
 
-  .about .container {
-    max-width: 80%;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-    text-align: justify;
-  }
-
-  .contact-1{
-    display: block;
-  }
-
-  .contact-2{
-    display: none;
-  }
-
-  .contact-form {
-    max-width: 480px; /* Giới hạn chiều rộng tối đa */
-  }
-
-  .contact-1 .smaller-width{
-    width: 500px;
-    text-align: left;
-  }
-
-  .contact-1 .bigger-width{
-    width: 500px;
-    text-align: left;
-    margin: 0 auto;
-  }
-
-  .form-container {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    width: 100%;
-  }
-
-  .contact-1 h2 {
-    text-align: center;
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .contact-1 hr {
-    margin-bottom: 20px;
-    border: 0;
-    height: 1px;
-    background: #ddd;
-  }
-
-  .contact-1 .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .contact-1 .form-row {
-    display: flex;
-    gap: 10px;
-    width: 500px;
-  }
-  
-  .contact-1 .form-row input {
-    flex: 1;
-  }
-  
-  .contact-1 input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-  
-  .contact-1 input:focus, textarea:focus {
-    outline: none;
-    border-color: #4caf50;
-  }
-  
-  .contact-1 textarea {
-    resize: vertical;
-  }
-
-  .contain-1 .contain hr{
-    color: #000;
-  }
-  
-  .contact-1 button {
-    padding: 10px;
-    background-color: #ff4d4d;
-    color: white;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-    width: 500px;
-  }
-  
-  .contact-1 button:hover {
-    background-color: #e63939;
-  }
-
-  .contact-1 .container {
-    padding: 20px;
-    margin-left: 200px;
-    margin-bottom: 10 px;
-    max-width: 500px;
-    font-family: Arial, sans-serif;
-    background-color: #3adb68;
-    border: 1px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    color: white;
-    font-size: 19px;
-  }
-
-  .contact-1 .container .make_it_center {
-    display: flex;
-    justify-content: center;
-    color: white;
-  }
-
-  .no-bullet {
-    list-style: none;
-  }
-
-  .make_it_bigger{
-    font-size: 50px;
-  }
-
-  .make_it_grey{
-    color: rgb(60, 60, 60);
-  }
-
-  .make_it_center1{
-    display: flex;
-    justify-content: center;
-  }
-
-  .make_it_center2{
-    display: none;
-  }
-
-  .text01{
-    visibility: hidden;
-  }
-
+  /* policy.html 
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
   .policy .container-2 {
     display: none;
   }
@@ -566,6 +626,16 @@
     width: 80%;
     margin: 0 auto;
     display: block;
+  }
+
+  .make_it_bigger{
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin: auto;
+    filter: blur(0px);
+    text-shadow: 2px 2px 4px #000000;
   }
 
   .policy .container-1 .table-top-align {
@@ -625,130 +695,51 @@
     line-height: 1.8
   }
 
-  .text0{
-    visibility: hidden;
+  
+  /* about.html 
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  .about .container {
+    max-width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    text-align: justify;
+  } 
+
+  .no-bullet {
+    list-style: none;
+  }
+
+  .make_it_grey{
+    color: rgb(60, 60, 60);
+  }
+
+  .make_it_center1{
+    display: flex;
+    justify-content: center;
+  }
+
+  .make_it_center2{
+    display: none;
   }
 
   
 
-  .make_it_white{
-      color: white;
-  }
 
-  .text02{
-    display: none;
-  }
 
-  .set-max-width{
-    max-width: 80%;
-    margin: 0 auto;
-  }
+  
 
-  .main-footer-1 {
-    display: block;
-  }
+  
 
-  .main-footer-2{
-    display: none;
-  }
+  
 
-  .main-footer-1 {
-    background-color: rgba(41,41,41,255); /* Example background color */
-    padding: 20px;
-    height: 200px;
-  }
-
-  .main-footer-1 .footer-table {
-    width: 80%;
-    vertical-align:text-top;
-    color: white;
-    font-size: 17px;
-    margin: 0 auto;
-    margin-top: -15px;
-  }
-
-  .main-footer-1 .footer-table .self-defined-td{
-    padding: 0px;
-    height: 100px;
-    text-align: left;
-    vertical-align: top;
-  }
-
-  .main-footer-2 {
-    background-color: rgba(41,41,41,255); /* Example background color */
-    padding: 20px;
-    height: 500px;
-  }
-
-  .main-footer-2 h2{
-    color: rgba(255,200, 11, 255);
-    font-size: 25px;
-  }
-
-  .main-footer-2 {
-    /* width: 80%; */
-    vertical-align:text-top;
-    color: white;
-    font-size: 20px;
-    margin: 0 auto;
-    margin-top: -15px;
-  }
-
-  .main-footer-2 .footer-table .self-defined-td{
-    padding: 0px;
-    height: 100px;
-    text-align: left;
-    vertical-align: top;
-  }
-
-  .contact-1 .self-defined-td{
-    padding: 0px;
-    height: 20px;
-    text-align: left;
-    vertical-align: top;
-  }
-
-  .contact-1 .make-it-smaller{
-    width: 200px;
-  }
-
-  .contact-2 .self-defined-td{
-    padding: 0px;
-    height: 20px;
-    text-align: left;
-    vertical-align: top;
-  }
-
-  .contact-2 .make-it-smaller{
-    width: 200px;
-  }
-
-  .main-footer-1 .self-defined-h2 {
-    font-size: 27px;
-    color: rgba(255,200, 11, 255);
-  }
-
-  .bottom-bar {
-    background-color: #7D7; /* Màu xanh lá */
-    color: white;
-    font-size: 18px;
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;
-    height: 20px;
-  }
-
-  .bottom-bar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    text-align: center;
-    margin-left: 20px;
-    font-size: 13px;
-  }
+  
 
   .main-rental-1{
     background-color:darkgrey;
+    margin-top: -10px;
   }
 
   .main-rental-1 .rental-table{
@@ -839,6 +830,67 @@
 
 
   
+
+
+
+  .rental-container {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    gap: 20px;
+    margin: 0 auto;
+  }
+
+  .image-container img {
+    width: 300px;
+    border-radius: 10px;
+  }
+
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .breadcrumb {
+    font-size: 12px;
+    color: gray;
+  }
+
+  .rental-container h1 {
+    margin: 10px 0;
+  }
+
+  .price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00;
+  }
+
+  .price span {
+    font-size: 16px;
+  }
+
+  .features {
+    list-style: none;
+    padding: 0;
+  }
+
+  .features li {
+    font-size: 14px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .features li::before {
+    content: "✔";
+    color: green;
+    margin-right: 8px;
+  }
 }
 
 
@@ -851,6 +903,10 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 @media (max-width: 1000px) and (min-width: 720px) {
+  .text7{
+    display: none;
+  }
+
 
 }
 
@@ -868,6 +924,25 @@
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  /* Stupid text */
+  /* Hide on both laptop and mobile */
+  .text0{ 
+    visibility: hidden;
+  }
+
+  /* Display on laptop but hide on mobile */
+  .text01{ 
+    display: none;
+  }
+
+  /* Display on mobile but hide on laptop */
+  .text02{ 
+    visibility: hidden;
+    display: block;
+  }
+  
+  
+  
   /* Top bar style definition 
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
   .top-bar .contact-info{
@@ -1006,14 +1081,29 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   }
 
+
   /* Brief description style definition
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
   .set-max-width h1{
     font-size: 25px;
   }
+
   .set-max-width p{
     font-size: 15px;
   }
+
+
+
+  /* Slider style definition
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  .mois-title{
+    font-size: 30px;
+  }
+
+  .slider-controls{
+    top: 55%
+  }
+
 
   /* Why us style definition
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */  
@@ -1038,7 +1128,7 @@
     margin-bottom: 50px;
     font-size: 25px;
     font-weight: bold;
-    color: rgb(252, 0, 0);
+    color: #7D7;
     filter: blur(0px);
     text-shadow: 1px 1px 1px #000000;
   }
@@ -1061,6 +1151,49 @@
     color: rgb(90, 88, 88);
   }
 
+
+  /* Form style definition 
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  .contact .container h1 {
+    font-size: 30px;
+  }
+
+  .contact .container p {
+    font-size: 15px;
+  }
+
+  .contact .container br {
+    display: none;
+  }
+
+  .contact .container h2 {
+    font-size: 1rem;
+  }
+
+  .contact .container hr {
+    margin-bottom: 20px;
+    border: 0;
+    height: 1px;
+    background: #ddd;
+  }
+
+  .form-container {
+    width: 200px;
+  }
+  
+  .contact .container .form-row {
+    flex-direction: column;
+  }
+  
+  .contact .container input, textarea {
+    font-size: 0.9rem;
+    width: 180px;
+  }
+
+  .contact .container button {
+    width: 200px;
+  }
+
   /* Google map style definition 
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
   .map-container {
@@ -1069,37 +1202,35 @@
   .google-map{
     width: 90%;
     height: 50%;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
 
+  /* Footer style definition  
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  .footer {
+    font-size: 17px;
+  }
+
+  /* Bottom bar style definition 
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 
-
-
-
-
-
-
-
-
-
-
-  /* Something i don't know for now */
+  /* policy.html 
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  
   .make_it_bigger{
-    font-size: 37px;
-  }
-
-  .make_it_center1{
-    display: none;
-  }
-
-  .make_it_center2{
-    display: flex;
-    justify-content: center;
-  }
-
-  .text01{
-    display: none;
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin: auto;
+    filter: blur(0px);
+    text-shadow: 2px 2px 4px #000000;
   }
 
   .policy .container-1 {
@@ -1161,139 +1292,32 @@
     display: none;
   }
 
-  .text10{
-    visibility: hidden;
+
+   /* about.html 
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  .make_it_center1{
     display: none;
   }
 
-  .make_it_white{
-      color: white;
-  }
-
-  .contact-1{
-    display: none;
-  }
-
-  .contact-2{
-    display: block;
-  }
-
-  .form-container {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .contact-2 h2 {
-    text-align: center;
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 10px;
-  }
-
-  .contact-form {
-    max-width: 280px; /* Giới hạn chiều rộng tối đa */
-  }
-  
-  .contact-2 hr {
-    margin-bottom: 20px;
-    border: 0;
-    height: 1px;
-    background: #ddd;
-  }
-
-  .contact-2 .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .contact-2 .form-row {
-    display: flex;
-    gap: 10px;
-    width: 300px;
-  }
-  
-  .contact-2 .form-row input {
-    flex: 1;
-  }
-  
-  .contact-2 input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-  
-  .contact-2 input:focus, textarea:focus {
-    outline: none;
-    border-color: #4caf50;
-  }
-  
-  .contact-2 textarea {
-    resize: vertical;
-  }
-
-  .contain-2 .contain hr{
-    color: #929191;
-  }
-  
-  .contact-2 button {
-    padding: 10px;
-    background-color: #ff4d4d;
-    color: white;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-    width: 300px;
-  }
-  
-  .contact-2 button:hover {
-    background-color: #e63939;
-  }
-
-  .contact-2 .container {
-    max-width: 300px;
-    font-family: Arial, sans-serif;
-    background-color: #3adb68;
-    padding: 20px;
-    border: 1px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-    margin-bottom: 30px;
-    color: white;
-  }
-
-  .contact-2 .container .make_it_center {
+  .make_it_center2{
     display: flex;
     justify-content: center;
   }
 
-  .text02{
-    visibility: hidden;
-  }
 
+  /* rental.html 
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
   .main-rental-1 {
     display: none;
   }
 
   .main-rental-2{
-    display: block;
-  }
-
-  .main-footer-1 {
-    display: none;
-  }
-
-  .main-footer-2{
     display: block;
   }
 }
