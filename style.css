@@ -332,7 +332,8 @@
     color: rgb(252, 0, 0);
   }
 
-  /* Google map style definition */
+  /* Google map style definition 
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
   .map-container {
     display: flex;
     justify-content: center;  /* Canh giữa theo chiều ngang */
@@ -1053,7 +1054,8 @@
     color: rgb(252, 0, 0);
   }
 
-  /* Google map style definition */
+  /* Google map style definition 
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
   .map-container {
     height: 70vh;            /* Chiều cao của phần tử chứa (100% chiều cao cửa sổ) */
   }
