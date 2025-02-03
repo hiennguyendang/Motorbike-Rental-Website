@@ -9,7 +9,8 @@
     margin: 0;
     padding: 0;
     /* list-style: none; */
-    font-family: Arial, sans-serif;
+    /* font-family: 'Cabin', sans-serif;  */
+    font-family: 'Lexend', sans-serif;
   }
 
   ul {
@@ -58,12 +59,15 @@
   /* Top bar style definition
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
   .top-bar {
-    background-color: #3adb68; /* Màu xanh lá */
+    background-color: #7D7; /* Màu xanh lá */
     color: white;
     font-size: 18px;
     font-family: 'Arial', sans-serif;
     font-weight: bold;
-    height: 50px;
+    height: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
   }
   
   .top-bar .container {
@@ -87,9 +91,11 @@
   /* Header style definition
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
   .main-header {
-    background-color: #3adb68;
+    background-color: white;
     border-bottom: 1px solid #ddd;
-    font-family: 'Arial', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
   }
   
   .main-header .container {
@@ -98,6 +104,7 @@
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 0px;
   }
 
   .desktop-menu{
@@ -106,7 +113,8 @@
   }
   
   .main-header .logo img {
-    height: 70px; /* Kích thước logo */
+    margin-top: 5px;
+    height: 72px; /* Kích thước logo */
   }
   
   .main-header .menu ul {
@@ -125,12 +133,12 @@
   }
 
   .make-it-green{
-    color: white;
+    color: #7D7;
   }
   
   .main-header .menu ul li a:hover {
     background-color: rgba(0, 0, 0, 0.05);
-    color: #3adb68; /* Đổi màu khi hover */
+    color: #7D7; /* Đổi màu khi hover */
   }
 
   .mobile-menu{
@@ -200,10 +208,11 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Lexend', sans-serif;
     color: white;
     text-align: center;
-    margin: auto;
+    margin: 0 auto;
+    margin-top: 0px;
     filter: blur(0px);
     display: block;
   }
@@ -220,19 +229,31 @@
   }
 
   .custom-button:hover {
-      transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  .set-max-width h1{
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin: auto;
+    filter: blur(0px);
+    text-shadow: 2px 2px 4px #000000;
   }
 
     /* Some available bikes style definition
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
   .background{
-    background-color:lightblue;
+    background-color:rgb(235, 235, 235);
     height: 80vh;
   }
 
   .mois-title{
+    display: inline-block;
     font-size: 30px;
-    color: brown;
+    color: rgba(255,200, 11, 255);
+    text-shadow: 1px 1px 1px #000000;
   }
 
   .slider-container {
@@ -298,7 +319,7 @@
 
   .service h3{
     font-size: 15px;
-    color: #3adb68;
+    color: #7D7;
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -312,13 +333,14 @@
     margin: 0 auto;
     width: 80%;
   }
+
   .three-steps-1 h1{
     margin-top: 50px;
     font-size: 50px;
     font-weight: bold;
     color: rgb(252, 0, 0);
     filter: blur(0px);
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 1px 1px 1px #000000;
   }
 
   .three-steps-1 table{
@@ -329,7 +351,7 @@
 
   .three-steps-1 i{
     font-size: 50px;
-    color: rgb(252, 0, 0);
+    color: rgb(90, 88, 88);
   }
 
   /* Google map style definition 
@@ -372,23 +394,7 @@
     filter: blur(0px);
   }
 
-  .set-max-width h1{
-    margin-top: 50px;
-    font-size: 50px;
-    font-weight: bold;
-    color: rgb(153, 213, 230);
-    margin: auto;
-    filter: blur(0px);
-    text-shadow: 2px 2px 4px #000000;
-  }
-
-  .set-max-width p{
-      color: black;
-      margin-top: 50px;
-      font-size: 20px;
-      margin: auto;
-      filter: blur(0px);
-  }
+  
 
   .make-it-yellow{
       color: rgba(255,200, 11, 255);
@@ -723,7 +729,7 @@
   }
 
   .bottom-bar {
-    background-color: #3adb68; /* Màu xanh lá */
+    background-color: #7D7; /* Màu xanh lá */
     color: white;
     font-size: 18px;
     font-family: 'Arial', sans-serif;
@@ -895,7 +901,7 @@
   }
 
   .expand-btn:hover {
-    color: blue;
+    color: #7D7;
   }
 
   .modal {
@@ -1013,7 +1019,6 @@
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */  
   .service {
     margin-top: 50px;
-    margin-bottom: 50px;
     padding: 20px;
     width: 90%;
   }
@@ -1030,11 +1035,12 @@
 
   .three-steps-2 h1{
     margin-top: 50px;
-    font-size: 35px;
+    margin-bottom: 50px;
+    font-size: 25px;
     font-weight: bold;
     color: rgb(252, 0, 0);
     filter: blur(0px);
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 1px 1px 1px #000000;
   }
 
   .three-steps-2 h2{
@@ -1050,8 +1056,9 @@
   }
 
   .three-steps-2 i{
+    margin: 0 auto;
     font-size: 50px;
-    color: rgb(252, 0, 0);
+    color: rgb(90, 88, 88);
   }
 
   /* Google map style definition 
