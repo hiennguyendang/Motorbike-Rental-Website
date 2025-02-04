@@ -89,11 +89,28 @@ function updateSliderPosition() {
 }
 
 prevButton.addEventListener('click', () => {
-    currentIndex = (currentIndex === 0) ? totalSlides - 5 : currentIndex - 1;
+    if (window.matchMedia("(max-width: 750px)").matches) {
+        currentIndex = (currentIndex === 0) ? totalSlides - 1 : currentIndex - 1;
+    } else {
+        currentIndex = (currentIndex === 0) ? totalSlides - 4 : currentIndex - 1;
+    }
+    
     updateSliderPosition();
 });
 
+
 nextButton.addEventListener('click', () => {
-    currentIndex = (currentIndex === totalSlides - 5) ? 0 : currentIndex + 1;
+    if (window.matchMedia("(max-width: 750px)").matches) {
+        currentIndex = (currentIndex === totalSlides - 1) ? 0 : currentIndex + 1;
+    } else {
+        currentIndex = (currentIndex === totalSlides - 4) ? 0 : currentIndex + 1;
+    }
     updateSliderPosition();
 });
+
+// Gọi hàm khi trang tải
+checkScreenSize();
+
+// Lắng nghe sự thay đổi kích thước màn hình
+window.addEventListener("resize", checkScreenSize);
+
