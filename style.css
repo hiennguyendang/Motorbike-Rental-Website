@@ -280,6 +280,10 @@
     padding-bottom: 50px;
   }
 
+  .slider-controls{
+    display: none;
+  }
+
   .mois-title{
     margin-top: 0px;
     margin-bottom: 0px;
@@ -288,13 +292,14 @@
     color: rgba(255,200, 11, 255);
     filter: blur(0px);
     text-shadow: 1px 1px 1px #000000;
+    margin-left: 40px;
   }
 
   .slider-container {
     position: relative;
     overflow: hidden;
     margin: 0 auto;
-    width: 76%;
+    width:78%;
   }
 
   .my-hr{
@@ -309,6 +314,7 @@
 
   .slider {
     display: flex;
+    justify-content: center;
     transition: transform 0.5s ease;
   }
 
@@ -321,16 +327,6 @@
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 4px 6px 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .slider-controls {
-    position: absolute;
-    top: 60%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transform: translateY(-50%);
   }
 
   .prev-button, .next-button {
@@ -347,6 +343,7 @@
     color: black;
   }
 
+  
 
   /* Why us style definition
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -573,10 +570,9 @@
   .main-footer .footer {
     padding: 20px;
     display: flex;
-    gap: 10px;
+    width: 80%;
     flex-wrap: wrap;
-    flex-basis: 500px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -588,7 +584,20 @@
   .footer-contact, .footer-about, .footer-logo {
     flex-basis: 350px;
     color: white;
-  }  
+  }
+
+  .footer-contact{
+    margin-top: -30px;
+    flex-basis: 400px;
+  }
+
+  .footer-about{
+    flex-basis: 170px;
+  }
+
+  .footer-logo{
+    flex-basis: 110px;  
+  }
 
   .footer {
     /* width: 80%; */
@@ -742,104 +751,7 @@
   }
 
   
-  /* rental.html 
-  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-  .main-rental-1{
-    background-color:darkgrey;
-    margin-top: -10px;
-  }
-
-  .main-rental-1 .rental-table{
-    width: 100px;
-    vertical-align:text-top;
-    color: white;
-    border-collapse: separate;
-    border-spacing: 30px;
-    margin: 0 auto;
-  }
-
-  .main-rental-1 h3{
-    font-size: 25px;
-  }
-
-  .main-rental-1 h2{
-    font-size: 35px;
-    color: rgba(255,200, 11, 255);
-  }
-
-  .main-rental-1 h1{
-    font-size: 35px;
-    color: rgba(255,200, 11, 255);
-    text-align: center;
-  }
-
-  .main-rental-1 .rental-table .rental-td{
-    background-color: white;
-    padding: 20px;
-  }
-
-  .main-rental-1 .rental-table .rental-td ul{
-    line-height: 2;
-  }
-
-  .main-rental-1 .rental-table .rental-td:hover{
-    background-color: #3adb68;
-  }
-
-  .main-rental-2{
-    background-color:darkgrey;
-  }
-
-  .main-rental-2 .rental-table{
-    width: 80%;
-    vertical-align: text-top;
-    color: white;
-    border-collapse: separate;
-    border-spacing: 30px;
-    margin: 0 auto;
-  }
-
-  .main-rental-2 h3{
-    font-size: 25px;
-  }
-
-  .main-rental-2 h2{
-    font-size: 35px;
-    color: rgba(255,200, 11, 255);
-  }
-
-  .main-rental-2 h1{
-    font-size: 35px;
-    color: rgba(255,200, 11, 255);
-    text-align: center;
-  }
-
-  .main-rental-2 .rental-table .rental-td{
-    background-color: white;
-    padding: 20px;
-  }
-
-  .main-rental-2 .rental-table .rental-td ul{
-    line-height: 1.25;
-  }
-
-  .main-rental-2 .rental-table .rental-td:hover{
-    background-color: #3adb68;
-  }
-
-  .main-rental-1 {
-    display: block;
-  }
-
-  .main-rental-2{
-    display: none;
-  }
-
-  
-/* motor.html 
+/* motor.html
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -850,7 +762,7 @@
     padding: 20px;
     border-radius: 10px;
     max-width: 900px;
-    gap: 20px;
+    gap: 100px;
     margin: 0 auto;
   }
 
@@ -1104,6 +1016,20 @@
 
   /* Slider style definition
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */  
+  .slider{
+    justify-content: start;
+  }
+  
+  .slider-controls {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-50%);
+  }
+  
   .mois-title{
     font-size: 30px;
     text-align: center;
@@ -1228,10 +1154,25 @@
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
   .footer {
     font-size: 17px;
+    justify-content: start;
+    gap: 0px
   }
 
   .footer h2{
     margin-top: 0px;
+  }
+
+  .footer-contact{
+    margin-top: 0px;
+  }
+
+  .footer-about{
+    flex-basis: 300px;
+    /* margin-left: -40px; */
+  }
+
+  .footer-logo{
+    flex-basis: 100px;
   }
 
   .footer-logo img{
@@ -1330,20 +1271,6 @@
   .make_it_center2{
     display: flex;
     justify-content: center;
-  }
-
-
-  /* rental.html 
-  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-  .main-rental-1 {
-    display: none;
-  }
-
-  .main-rental-2{
-    display: block;
   }
 
 
